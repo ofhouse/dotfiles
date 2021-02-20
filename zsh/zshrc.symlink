@@ -110,6 +110,7 @@ source $ZSH/oh-my-zsh.sh
 #########
 # Aliases
 #########
+alias pip=pip3
 
 #################
 # Custom commands
