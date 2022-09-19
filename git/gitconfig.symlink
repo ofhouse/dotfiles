@@ -15,3 +15,8 @@
 
 [init]
 	defaultBranch = main
+
+# No longer `git push --set-upstream origin main`
+# See: https://twitter.com/SantoshYadavDev/status/1558086948484530177
+[push]
+	autoSetupRemote = true
