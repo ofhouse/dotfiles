@@ -1,7 +1,17 @@
 
 # Local/private config goes in the include
 [include]
-        path = ~/.gitconfig.local
+	path = ~/.gitconfig.local
 
 [alias]
-        co = checkout
+	co = checkout
+
+[commit]
+	gpgsign = true
+
+[pull]
+	rebase = true
+	ff = only
+
+[init]
+	defaultBranch = main
