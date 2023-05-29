@@ -1,2 +1,4 @@
 git/gitconfig*.local.symlink
 !git/gitconfig.local.symlink.example
+
+.DS_STORE
