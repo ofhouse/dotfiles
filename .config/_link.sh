@@ -18,10 +18,12 @@ main() {
   echo "Linking files.."
   echo "Running in ${config_dir}"
 
-  for src in $( find -H "$config_dir" -maxdepth 2 -name '*.symlink' -not -path '*.git*' )
+  for src in $( find -H "$config_dir" -maxdepth 3 -name '*.symlink' -not -path '*.git*' )
   do
     rel_path=$( relativePath "$PROJECT_PATH" "$src" )
     dst="$HOME/${rel_path%.*}"
+    # Make sure dest path exists
+    mkdir -p "$( dirname $dst )"
 
     echo "${src} -> ${dst}"
     linkFile "$src" "$dst"
