@@ -13,6 +13,9 @@ set fish_greeting
 # Custom commands
 ################################################################################
 
+# Make sure user bin is in path
+fish_add_path "$HOME/bin"
+
 # Create temporary directory and \kbd{cd} to it
 function cdt
     builtin cd "$(mktemp -d)"
