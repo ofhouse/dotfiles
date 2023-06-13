@@ -4,6 +4,7 @@ $git_branch\
 $git_status\
 $rust\
 $golang\
+$terraform\
 \n\
 )\
 [▲](bold brightwhite)\
@@ -51,7 +52,7 @@ symbol = " "
 format = """
 [](fg:black bg:blue)\
 [ $symbol$branch(:$remote_branch) ]($style)\
-[](fg:blue bg:black) """
+[](fg:blue bg:none) """
 style = "bg:blue fg:black"
 symbol = " "
 
@@ -155,3 +156,8 @@ symbol = " "
 
 [spack]
 symbol = "🅢 "
+
+[terraform]
+symbol = " "
+format = "$symbol$version"
+version_format = "${raw}"
